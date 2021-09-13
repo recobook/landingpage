@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recobook</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body {width: 100%; height: 100%;}
+        
+        .logo-larger {
+            max-width: 352px;
+            max-height: 71px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            height: 100%;
+            max-height: 966px;
+            background-color: #F0F0F0;
+        }
+
+        .header nav {
+                height: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 20px;
+                padding-right: 20px;
+                
+        }
+
+        button {
+            max-width: 364px;
+            max-height: 64px;
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 15px 32px;
+            font-size: 16px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Roboto',sans-serif;
+            border-radius: 0.3em; 
+        }
+
+        .button-red {
+            background-color: #CB6161;        
+            color: white;
+            border: 2px solid #CB6161;
+            width: 364px;
+            height: 64px;
+            margin-right: 5px;
+        }
+
+        .button-gray {
+            background-color: #F0F0F0;
+            color: black;
+            border: 2px solid #CB6161;
+            width: 364px;
+            height: 64px;
+            margin-left: 5px;
+        }
+
+        .button-white {
+            background-color: #fff;
+            color: black;
+            border: 2px solid #CB6161;
+            width: 364px;
+            height: 64px;
+            margin-left: 5px;
+        }
+
+        .container-sections {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .container-sections section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding-left: 50px;
+        }
+
+        h1 {
+            font-size: 82px;
+        }
+        p {
+            font-size: 27px;
+        }
+        
+        .container-sections section h1,p,button {
+            width: 100%;
+            margin-top: 30px;
+            word-wrap: break-word;      
+            white-space: -moz-pre-wrap; 
+            white-space: pre-wrap;      
+            font-family: 'Roboto',sans-serif;
+            
+        }
+        .container-sections section .poster {
+            max-width: 685.33px;
+            max-height: 499px;
+            width: 100%;
+            height: 100%;
+        }
+        .browser {
+            max-width: 914px;
+            max-height: 455px;
+            width: 100%;
+            height: 100%;
+        }
+        .container-info-preview {
+            width: 100%;
+            height: 566px;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .container-info-preview div {
+            height: 70%;
+            width: 40%;
+        }
+
+        .container-info-preview div h2 {
+            font-size: 42px;
+        }
+        .container-info-preview div p {
+            font-size: 27px;
+        }
+
+        .container-info-preview div h2,p {
+            word-wrap: break-word;      
+            white-space: -moz-pre-wrap; 
+            white-space: pre-wrap;      
+            font-family: 'Roboto',sans-serif;
+        }
+
+        .container-info-comment header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .container-info-comment header h3 {
+            font-size: 46px;
+            width: 55%;
+            text-align: justify;
+            font-family: 'Roboto',sans-serif;
+
+        }
+
+        .container-info-comment div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 90px;
+            align-items: flex-end;
+            margin-top: 140px;
+        }
+
+        .container-info-comment div article {
+            width: 687px;
+        }
+
+        .container-info-comment div article city {
+            font-size: 31px;
+        }
+
+        .woman {
+            max-width: 822px;
+            max-height: 590px;
+            height: 100%;
+            width: 1005;
+        }
+        .section {
+            background-image: url("./images/vector-red.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 516px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 90px;
+        }
+        .section h3 {
+            color: #fff;
+            font-family: 'Roboto',sans-serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header" >
+        <nav>
+            <img class="logo-larger" src="./images/logo@352x71.svg" alt="logo larger">
+
+            <div class="button-wrapper">
+                <button class="button-red">ACESSAR SUA CONTA</button>
+                <button class="button-gray">CRIE SUA CONTA JÁ</button>
+            </div>
+        </nav>
+        <div class="container-sections">
+            <section>
+                <h1>Seja bem-vindo a facilidade</h1>
+                <p>O recobook é uma plataforma de compartilhamento de elos, criada para interconectar e facilitar a vida das pessoas na interação com os melhores locais, de uma forma simples e fácil.</p>
+                <button class="button-red">CRIE SUA CONTA JÁ</button>
+            </section>
+            <section>
+                <img class="poster" src="./images/post.svg" alt="poster">
+            </section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container-info-preview">
+            <img class="browser" src="./images/browser.svg" alt="Mini apresentação">
+            <div>
+                <h2>Uma maneira diferente de lidar com o novo</h2>
+                <p>O nosso objetivo é simples, em defender que bons momentos devem ser compartilhados de uma forma simples.</p>
+            </div>
+        </div>
+        <div class="container-info-comment">
+            <header>
+                <h3>Mais de 10 milhões de pessoas usam o recobook para alcançar as mais deversas esperiências</h3>
+            </header>
+
+            <div>
+                <article>
+                    <city>“O recobook melhorou minha forma de planejar minhas viagens para usufluir 
+                        melhor de cada catinho desse mundo, a sensação ao visualizar as pessoas 
+                        tendo boas experências em diversos locais diretamente do meu celular, é 
+                        coisa de outro MUNDO.”</city>
+                    <p>Fuyutsuki Electronics</p>
+                    <p><strong>Cyberpunk</strong>, 12/05/2077</p>
+                </article>
+                <img class="woman" src="./images/woman.svg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <section class="section">
+        <h3>Escolha um jeito melhor de encontrar a sua próxima experiência</h3>
+        <button class="button-white">CRIE SUA CONTA JÁ</button>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
